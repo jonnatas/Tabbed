@@ -19,13 +19,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initViews()
-
         //Create a slides
         setupViewPager()
-
         //Create a Floating Action Button
         setupFab()
-
     }
 
     private fun setupFab() {
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupViewPager() {
-        val sectionsPagerAdapter = SectionsPagerAdapter( supportFragmentManager)
+        val sectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
 
         sectionsPagerAdapter.addFragment(CallFragment(), "Call")
         sectionsPagerAdapter.addFragment(ContactFragment(), "Contact")
